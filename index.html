@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>P2P Card Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>P2P Card Game</h1>
+  <div id="connection">
+    <button id="create-offer">Create Game</button>
+    <button id="join-offer">Join Game</button>
+    <textarea id="signal-data" placeholder="Paste signal data here"></textarea>
+    <button id="set-remote">Set Remote</button>
+  </div>
+  <div id="game" style="display:none;">
+    <h2>Game Started</h2>
+    <p>Your HP: <span id="player-hp">20</span></p>
+    <p>Opponent HP: <span id="opponent-hp">20</span></p>
+    <div id="hand"></div>
+    <button id="end-turn">End Turn</button>
+  </div>
+  <script src="p2p.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
